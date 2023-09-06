@@ -13,9 +13,9 @@ function handleSubmit(e) {
     }
 
     const data = {
-        service_id: process.env.NEXT_PUBLIC_SERVICE_ID || "",
-        template_id: process.env.NEXT_PUBLIC_TEMPLATE_ID || "",
-        user_id: process.env.NEXT_PUBLIC_USER_ID || "",
+        service_id: "service_6tmgyph",
+        template_id: "template_tlhkhrm",
+        user_id: "template_tlhkhrm",
         template_params: templateParams
     };
 
