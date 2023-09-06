@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="./js/contact.js" defer></script>
 </head>
 
 <body>
@@ -112,21 +113,14 @@
     <section class="contact spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798902705!2d-74.25986790365917!3d40.697670067823786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1596152431947!5m2!1sen!2sbd"
-                            height="450" style="border:0;"></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-12 col-md-12">
                     <div class="contact__form">
                         <h3>Entrar em contato</h3>
-                        <form action="#">
-                            <input type="text" placeholder="Nome">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Telefone">
-                            <textarea placeholder="Menssagem"></textarea>
+                        <form onsubmit="handleSubmit(e)">
+                            <input id="contact-name" required type="text" placeholder="Nome">
+                            <input id="contact-email" required type="text" placeholder="Email">
+                            <input id="contact-phone" required type="text" placeholder="Telefone">
+                            <textarea id="contact-message" placeholder="Menssagem"></textarea>
                             <button type="submit" class="site-btn">Enviar Menssagem</button>
                         </form>
                     </div>
