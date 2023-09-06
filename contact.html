@@ -116,10 +116,10 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="contact__form">
                         <h3>Entrar em contato</h3>
-                        <form onsubmit="handleSubmit(e)">
+                        <form onsubmit="handleSubmit(event)">
                             <input id="contact-name" required type="text" placeholder="Nome">
-                            <input id="contact-email" required type="text" placeholder="Email">
-                            <input id="contact-phone" required type="text" placeholder="Telefone">
+                            <input id="contact-email" required type="email" placeholder="Email">
+                            <input id="contact-phone" required type="text" placeholder="Telefone" maxlength="11" minlength="9">
                             <textarea id="contact-message" placeholder="Menssagem"></textarea>
                             <button type="submit" class="site-btn">Enviar Menssagem</button>
                         </form>
